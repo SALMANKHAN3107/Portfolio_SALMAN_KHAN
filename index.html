@@ -1,235 +1,368 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salman Khan S | Portfolio</title>
-    <meta name="description" content="Portfolio of Salman Khan S, AI & Data Science student.">
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salman Khan S — Portfolio</title>
+  <meta name="description" content="Salman Khan S — Java & Backend Developer. Portfolio showcasing projects, skills, and achievements." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">SK.</a>
-            <ul class="nav-links">
-                <li><a href="#about">Profile</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#contact" class="btn btn-primary">Contact Me</a></li>
-            </ul>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">SK<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-bg-orb orb1"></div>
+    <div class="hero-bg-orb orb2"></div>
+    <div class="hero-bg-orb orb3"></div>
+    <div class="hero-content reveal">
+      <div class="hero-badge">👋 Available for Opportunities</div>
+      <h1 class="hero-name">Salman <span class="gradient-text">Khan S</span></h1>
+      <div class="hero-tagline">
+        <span>I build </span>
+        <span class="typed-text" id="typed"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc">
+        Motivated Java & Backend Developer skilled in Spring Boot, REST APIs, and Cloud technologies.
+        Passionate about building scalable, efficient solutions.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-secondary">Get In Touch</a>
+      </div>
+      <div class="hero-links">
+        <a href="mailto:skhan310703@gmail.com" class="hero-link-badge">📧 skhan310703@gmail.com</a>
+        <a href="tel:+917418133107" class="hero-link-badge">📞 +91 7418133107</a>
+        <a href="#" class="hero-link-badge">🔗 LinkedIn: SALMAN_KHAN_S</a>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="hero-card glass-card">
+        <div class="profile-ring">
+          <div class="profile-initials">SK</div>
         </div>
-    </nav>
-
-    <header class="hero">
-        <div class="container hero-container">
-            <div class="hero-content">
-                <span class="greeting">Hello, I'm</span>
-                <h1>Salman Khan S</h1>
-                <p class="subtitle">Java & Backend Developer</p>
-                <p class="description">Motivated and detail-oriented Computer Science professional with expertise in Java, backend development, and database systems. Experienced in building scalable applications using Spring Boot and REST APIs.</p>
-                <div class="hero-actions">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="image-placeholder">
-                    <div class="blob"></div>
-                </div>
-            </div>
+        <div class="hero-stat-row">
+          <div class="hero-stat"><span class="stat-num">8.76</span><span class="stat-label">CGPA</span></div>
+          <div class="hero-stat"><span class="stat-num">2+</span><span class="stat-label">Projects</span></div>
+          <div class="hero-stat"><span class="stat-num">2x</span><span class="stat-label">Hackathons</span></div>
         </div>
-    </header>
-
-    <section id="about" class="section bg-white">
-        <div class="container">
-            <div class="section-header">
-                <h2>Profile</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="about-content" style="grid-template-columns: 1fr;">
-                <div class="about-text" style="text-align: center; max-width: 800px; margin: 0 auto;">
-                    <p style="font-size: 1.2rem; line-height: 1.8;">"Motivated and detail-oriented Computer Science professional with expertise in Java, backend development, and database systems. Experienced in building scalable applications using Spring Boot and REST APIs. Passionate about developing efficient solutions and continuously enhancing technical skills."</p>
-                </div>
-            </div>
+        <div class="tech-pills">
+          <span class="pill">Java</span>
+          <span class="pill">Spring Boot</span>
+          <span class="pill">Python</span>
+          <span class="pill">AWS</span>
+          <span class="pill">MySQL</span>
+          <span class="pill">REST APIs</span>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="education" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Education</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="skills-grid">
-                <div class="card skill-card" style="border-left: 4px solid var(--primary-color);">
-                    <h3 style="color: var(--primary-color);">Rathinam Technical Campus</h3>
-                    <p style="font-weight: 600; color: var(--text-color); margin-bottom: 0.5rem;">B.Tech (AI & DS)</p>
-                    <p style="margin-bottom: 0;">Coimbatore | 09/2023 - Present</p>
-                    <p style="color: var(--accent-color); font-weight: 600;">CGPA: 8.76</p>
-                </div>
-                <div class="card skill-card" style="border-left: 4px solid var(--secondary-color);">
-                    <h3 style="color: var(--secondary-color);">Shamrock Mat. Hr. Sec. School</h3>
-                    <p style="font-weight: 600; color: var(--text-color); margin-bottom: 0.5rem;">Higher Secondary Certificate</p>
-                    <p style="margin-bottom: 0;">Chennai | 06/2020 - 05/2021</p>
-                    <p style="color: var(--accent-color); font-weight: 600;">Overall Score: 90%</p>
-                </div>
-            </div>
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label reveal">About Me</div>
+      <h2 class="section-title reveal">Profile <span class="gradient-text">Overview</span></h2>
+      <div class="about-grid">
+        <div class="glass-card about-card reveal">
+          <div class="about-icon">🚀</div>
+          <h3>Who I Am</h3>
+          <p>Motivated and detail-oriented Computer Science professional with expertise in Java, backend development, and database systems. Experienced in building scalable applications using Spring Boot and REST APIs.</p>
         </div>
-    </section>
-
-    <section id="skills" class="section bg-white">
-        <div class="container">
-            <div class="section-header">
-                <h2>Technical Skills & Strengths</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="skills-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
-                <div class="card skill-card">
-                    <h3>Programming</h3>
-                    <ul class="skill-list">
-                        <li>Java</li>
-                        <li>SQL</li>
-                        <li>Python</li>
-                    </ul>
-                </div>
-                <div class="card skill-card">
-                    <h3>Backend & DB</h3>
-                    <ul class="skill-list">
-                        <li>Spring Boot</li>
-                        <li>REST APIs</li>
-                        <li>MySQL</li>
-                        <li>PostgreSQL</li>
-                    </ul>
-                </div>
-                <div class="card skill-card">
-                    <h3>Cloud & Tools</h3>
-                    <ul class="skill-list">
-                        <li>AWS Services</li>
-                        <li>Git & GitHub</li>
-                        <li>Postman</li>
-                    </ul>
-                </div>
-                <div class="card skill-card">
-                    <h3>Core Competencies</h3>
-                    <ul class="skill-list">
-                        <li>Data Structures & Algorithms</li>
-                        <li>OOPs</li>
-                        <li>Problem Solving</li>
-                        <li>API Development & Debugging</li>
-                    </ul>
-                </div>
-                <div class="card skill-card">
-                    <h3>Key Strengths</h3>
-                    <ul class="skill-list">
-                        <li>Leadership</li>
-                        <li>Responsibility</li>
-                        <li>Adaptability</li>
-                        <li>Teamwork & Collaboration</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="glass-card about-card reveal">
+          <div class="about-icon">🎯</div>
+          <h3>My Focus</h3>
+          <p>Passionate about developing efficient solutions and continuously enhancing technical skills. I thrive in collaborative environments and enjoy solving complex backend problems.</p>
         </div>
-    </section>
-
-    <section id="projects" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Projects</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="projects-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
-                <div class="card project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, var(--secondary-color), var(--primary-color)); height: 150px;"></div>
-                    <div class="project-info">
-                        <h3>Certivault - Digital Certificate Management System</h3>
-                        <p style="font-size: 0.95rem;">A role-based digital certificate management system built with Spring Boot, using JWT for secure authentication. Enables certificate upload, approval workflows, REST APIs with pagination, and analytics for deep insights.</p>
-                        <div class="project-tags">
-                            <span>Java</span>
-                            <span>Spring Boot</span>
-                            <span>JWT</span>
-                            <span>MySQL</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, var(--accent-color), var(--secondary-color)); height: 150px;"></div>
-                    <div class="project-info">
-                        <h3>Academic Document Q&A Bot (RAG)</h3>
-                        <p style="font-size: 0.95rem;">Built a RAG-based chatbot to extract key information from academic PDFs using LlamaIndex. Integrated the Gemini API to generate context-aware responses and developed a simple interface with Streamlit.</p>
-                        <div class="project-tags">
-                            <span>Python</span>
-                            <span>LlamaIndex</span>
-                            <span>Gemini API</span>
-                            <span>Streamlit</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="glass-card about-card reveal">
+          <div class="about-icon">💡</div>
+          <h3>My Goal</h3>
+          <p>To leverage my strong backend development skills and AI knowledge to build impactful systems — from scalable APIs to intelligent document Q&A bots using modern LLM technologies.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="achievements" class="section bg-white">
-        <div class="container">
-            <div class="section-header">
-                <h2>Hackathons, Certifications & Workshops</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="projects-grid" style="grid-template-columns: 1fr; max-width: 900px; margin: 0 auto; gap: 1.5rem;">
-                <div class="card project-card" style="padding: 1.5rem; text-align: left;">
-                    <h3 style="color: var(--primary-color);">🏆 Techgium Hackathon</h3>
-                    <p>Shortlisted till Semi-Final Round for the project “AI Enabled Building Automation System”.</p>
-                </div>
-                <div class="card project-card" style="padding: 1.5rem; text-align: left;">
-                    <h3 style="color: var(--primary-color);">🏆 24-Hour Intercollegiate Hackathon</h3>
-                    <p>Received Surprise Special Prize for developing a Smart EB (Electricity Bill) Calculating and Controlling System.</p>
-                </div>
-                <div class="card project-card" style="padding: 1.5rem; text-align: left;">
-                    <h3 style="color: var(--secondary-color);">📜 AWS Skill Builder Certificate</h3>
-                    <p>Completed foundational learning modules on AWS cloud services and concepts.</p>
-                </div>
-                <div class="card project-card" style="padding: 1.5rem; text-align: left;">
-                    <h3 style="color: var(--accent-color);">💻 DSA Bootcamp (Syntax Error)</h3>
-                    <p>Completed a comprehensive online DSA Bootcamp covering fundamentals of Data Structures and Algorithms and practicing problem-solving.</p>
-                </div>
-            </div>
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <div class="section-label reveal">Background</div>
+      <h2 class="section-title reveal">My <span class="gradient-text">Education</span></h2>
+      <div class="edu-grid">
+        <div class="glass-card edu-card reveal">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-info">
+            <span class="edu-degree">B.Tech (AI & Data Science)</span>
+            <span class="edu-school">Rathinam Technical Campus, Coimbatore</span>
+            <span class="edu-period">09/2023 – Present</span>
+          </div>
+          <div class="edu-badge">CGPA: 8.76</div>
         </div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="container">
-            <div class="contact-box card">
-                <div class="section-header">
-                    <h2>Get In Touch</h2>
-                    <p class="contact-subtitle">I'm currently looking for new opportunities and eager to connect. Feel free to reach out via email or phone!</p>
-                </div>
-                
-                <div style="display: flex; flex-direction: column; gap: 1rem; align-items: center; margin-bottom: 2rem;">
-                    <p><strong>Email:</strong> <a href="mailto:skhan310703@gmail.com">skhan310703@gmail.com</a></p>
-                    <p><strong>Phone:</strong> +91 7418133107</p>
-                    <p><strong>LinkedIn:</strong> <a href="#" target="_blank">SALMAN_KHAN_S</a></p>
-                </div>
-
-                <a href="mailto:skhan310703@gmail.com" class="btn btn-primary btn-large">Send an Email</a>
-            </div>
+        <div class="glass-card edu-card reveal">
+          <div class="edu-icon">🏫</div>
+          <div class="edu-info">
+            <span class="edu-degree">Higher Secondary Certificate (HSC)</span>
+            <span class="edu-school">Shamrock Mat. Hr. Sec. School, Chennai</span>
+            <span class="edu-period">06/2020 – 05/2021</span>
+          </div>
+          <div class="edu-badge">90%</div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <div class="container footer-container">
-            <p>&copy; 2026 Salman Khan S. Built with clean code and thoughtful design.</p>
-            <div class="social-links">
-                <a href="mailto:skhan310703@gmail.com">Email</a>
-                <a href="#">LinkedIn</a>
-            </div>
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-label reveal">Expertise</div>
+      <h2 class="section-title reveal">Technical <span class="gradient-text">Skills</span></h2>
+      <div class="skills-grid">
+
+        <div class="glass-card skill-group reveal">
+          <h3 class="skill-group-title"><span class="skill-icon">⚙️</span> Programming</h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item"><span>Java</span><div class="bar"><div class="bar-fill" data-pct="90"></div></div></div>
+            <div class="skill-bar-item"><span>Python</span><div class="bar"><div class="bar-fill" data-pct="80"></div></div></div>
+            <div class="skill-bar-item"><span>SQL</span><div class="bar"><div class="bar-fill" data-pct="85"></div></div></div>
+          </div>
         </div>
-    </footer>
 
-    <script src="script.js"></script>
+        <div class="glass-card skill-group reveal">
+          <h3 class="skill-group-title"><span class="skill-icon">🖥️</span> Backend & APIs</h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item"><span>Spring Boot</span><div class="bar"><div class="bar-fill" data-pct="88"></div></div></div>
+            <div class="skill-bar-item"><span>REST APIs</span><div class="bar"><div class="bar-fill" data-pct="85"></div></div></div>
+            <div class="skill-bar-item"><span>Spring Security (JWT)</span><div class="bar"><div class="bar-fill" data-pct="80"></div></div></div>
+          </div>
+        </div>
+
+        <div class="glass-card skill-group reveal">
+          <h3 class="skill-group-title"><span class="skill-icon">🗄️</span> Databases</h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item"><span>MySQL</span><div class="bar"><div class="bar-fill" data-pct="85"></div></div></div>
+            <div class="skill-bar-item"><span>PostgreSQL</span><div class="bar"><div class="bar-fill" data-pct="75"></div></div></div>
+          </div>
+        </div>
+
+        <div class="glass-card skill-group reveal">
+          <h3 class="skill-group-title"><span class="skill-icon">☁️</span> Cloud & Tools</h3>
+          <div class="skill-tags">
+            <span class="tag">AWS Services</span>
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">Postman</span>
+            <span class="tag">Maven</span>
+            <span class="tag">Render</span>
+          </div>
+        </div>
+
+        <div class="glass-card skill-group reveal">
+          <h3 class="skill-group-title"><span class="skill-icon">🧠</span> Core Competencies</h3>
+          <div class="skill-tags">
+            <span class="tag">Data Structures & Algorithms</span>
+            <span class="tag">OOP Principles</span>
+            <span class="tag">Problem Solving</span>
+            <span class="tag">API Development</span>
+            <span class="tag">Debugging</span>
+          </div>
+        </div>
+
+        <div class="glass-card skill-group reveal">
+          <h3 class="skill-group-title"><span class="skill-icon">🌟</span> Key Strengths</h3>
+          <div class="skill-tags">
+            <span class="tag">Leadership</span>
+            <span class="tag">Responsibility</span>
+            <span class="tag">Adaptability</span>
+            <span class="tag">Teamwork</span>
+            <span class="tag">Collaboration</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-label reveal">Work</div>
+      <h2 class="section-title reveal">Featured <span class="gradient-text">Projects</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card glass-card reveal">
+          <div class="project-header" style="background: linear-gradient(135deg, #2563EB, #38BDF8);">
+            <div class="project-logo">🔐</div>
+          </div>
+          <div class="project-body">
+            <div class="project-status">Jan 2025 – Apr 2026</div>
+            <h3 class="project-title">CertiVault</h3>
+            <p class="project-sub">Digital Certificate Management System</p>
+            <p class="project-desc">A role-based digital certificate management system built with Spring Boot. Features JWT authentication, certificate upload & approval workflows, REST APIs with pagination, and analytics for department-wise, year-wise, and category-wise insights.</p>
+            <div class="project-tech">
+              <span>Java</span><span>Spring Boot</span><span>JWT</span>
+              <span>Spring Data JPA</span><span>MySQL</span><span>Postman</span><span>Render</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card reveal">
+          <div class="project-header" style="background: linear-gradient(135deg, #7C3AED, #38BDF8);">
+            <div class="project-logo">🤖</div>
+          </div>
+          <div class="project-body">
+            <div class="project-status">Nov 2025 – Mar 2026</div>
+            <h3 class="project-title">Academic Q&A Bot (RAG)</h3>
+            <p class="project-sub">AI-Powered Document Intelligence</p>
+            <p class="project-desc">A RAG-based chatbot that extracts key information from academic PDFs like syllabi and timetables using LlamaIndex for efficient retrieval. Integrated the Gemini API for accurate, context-aware responses with a clean Streamlit interface.</p>
+            <div class="project-tech">
+              <span>Python</span><span>LlamaIndex</span><span>Gemini API</span>
+              <span>Streamlit</span><span>PyPDF</span><span>RAG</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACHIEVEMENTS ===== -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <div class="section-label reveal">Recognition</div>
+      <h2 class="section-title reveal">Achievements & <span class="gradient-text">Certifications</span></h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">🏆</div>
+          <div class="glass-card timeline-card">
+            <span class="timeline-type hackathon">Hackathon</span>
+            <h3>Techgium Hackathon — L&T</h3>
+            <p>Shortlisted till Semi-Final Round at National Level for the project <strong>"AI Enabled Building Automation System"</strong>.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">🏅</div>
+          <div class="glass-card timeline-card">
+            <span class="timeline-type hackathon">Hackathon</span>
+            <h3>24-Hour Intercollegiate Hackathon</h3>
+            <p>Received <strong>Surprise Special Prize</strong> for developing a Smart EB (Electricity Bill) Calculating and Controlling System.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">📜</div>
+          <div class="glass-card timeline-card">
+            <span class="timeline-type cert">Certification</span>
+            <h3>AWS Skill Builder Certificate</h3>
+            <p>Completed foundational learning modules on AWS cloud services and core cloud concepts.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">💻</div>
+          <div class="glass-card timeline-card">
+            <span class="timeline-type workshop">Workshop</span>
+            <h3>DSA Bootcamp — Syntax Error</h3>
+            <p>Completed comprehensive online bootcamp covering fundamentals of Data Structures & Algorithms with hands-on problem-solving. <em>(Nov–Dec 2025)</em></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-label reveal">Connect</div>
+      <h2 class="section-title reveal">Get In <span class="gradient-text">Touch</span></h2>
+      <div class="contact-grid">
+        <div class="glass-card contact-info reveal">
+          <h3>Let's work together!</h3>
+          <p>I'm open to new opportunities, collaborations, or just a good conversation about tech. Reach out anytime!</p>
+          <div class="contact-details">
+            <a href="mailto:skhan310703@gmail.com" class="contact-row">
+              <span class="contact-icon">📧</span>
+              <div><strong>Email</strong><span>skhan310703@gmail.com</span></div>
+            </a>
+            <a href="tel:+917418133107" class="contact-row">
+              <span class="contact-icon">📞</span>
+              <div><strong>Phone</strong><span>+91 7418133107</span></div>
+            </a>
+            <div class="contact-row">
+              <span class="contact-icon">📍</span>
+              <div><strong>Location</strong><span>Tirupur, Tamil Nadu 641606</span></div>
+            </div>
+            <div class="contact-row">
+              <span class="contact-icon">🔗</span>
+              <div><strong>LinkedIn</strong><span>SALMAN_KHAN_S</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="glass-card contact-form-card reveal">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" placeholder="Hi Salman, I'd like to connect..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="width:100%">Send Message 🚀</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container footer-inner">
+      <p>Designed & built by <strong>Salman Khan S</strong> © 2026</p>
+      <div class="footer-links">
+        <a href="mailto:skhan310703@gmail.com">Email</a>
+        <a href="#">LinkedIn</a>
+        <a href="https://github.com/SALMANKHAN3107" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

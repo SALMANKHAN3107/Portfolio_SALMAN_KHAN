@@ -1,0 +1,58 @@
+SALMAN KHAN S
+skhan310703 @gmail.com
+SALMAN KHAN S7418133107
+SALMAN_KHAN_S
+PROFILE
+Motivated and detail-oriented Computer Science professional with expertise in Java, backend development, and database 
+systems. Experienced in building scalable applications using Spring Boot and REST APIs. Passionate about developing 
+efficient solutions and continuously enhancing technical skills.
+EDUCATION
+B.Tech(AI&DS), RATHINAM TECHNICAL CAMPUS
+•CGPA: 8.7609/2023 – Present
+Coimbatore
+HSC, SHAMROCK MAT.HR.SEC.SCHOOL
+•Secured 90% overall score in Higher Secondary Examination06/2020 – 05/2021
+Chennai
+TECHNICAL SKILLS
+PROGRAMMING LANGUAGES
+Java, SQL ,Python
+Cloud
+AWS Services
+Tools
+Git, GitHub, PostmanBackend
+Spring Boot, REST APIs
+Core Competencies
+Data Structures & Algorithms, OOPs, Problem Solving, API 
+Development, Debugging
+DBMS
+MySQL, PostgreSQL
+WORKSHOPS
+DSA BOOTCAMP
+•Completed a comprehensive online DSA Bootcamp by Syntax Error, covering fundamentals 
+of Data Structures and Algorithms and practicing problem-solving across key topics.11/2025 – 12/2025
+PROJECTS
+Certivault - Digital Certificate Management System
+Certivault is a role-based digital certificate management system built with Spring Boot, using 
+JWT for secure authentication and access control. It enables certificate upload, approval 
+workflows, and provides REST APIs with pagination and filtering. The system also includes 
+analytics for department-wise, year-wise, and category-wise insights. 
+Tech Stack : Java, Spring Boot, Spring Security (JWT), Spring Data JPA, MySQL, Maven, 
+Git, Postman, Render.01/2025 – 04/2026
+Academic Document Q&A Bot (RAG)
+Built a RAG-based chatbot to extract key information from academic PDFs like syllabi and 
+timetables using LlamaIndex for efficient retrieval. Integrated the Gemini API to generate 
+accurate, context-aware responses based on document content. Developed a simple chat 
+interface with Streamlit for seamless document upload and querying.
+Tech Stack : Python, LlamaIndex, Gemini API, Streamlit, PyPDF11/2025 – 03/2026KEY STRENGTHS
+• Leadership  
+• Responsibility    
+• Adaptability     
+• Teamwork & Collaboration
+HACKOTHON ACHIEVEMENTS
+Techgium Hackathon
+•Shortlisted till Semi-Final Round for the project “AI Enabled Building Automation System.
+24-Hour Intercollegiate Hackathon
+•Received Surprise Special Prize for developing a Smart EB (Electricity Bill) Calculating and Controlling System
+CERTIFICATIONS
+AWS Skill Builder Certificate
+•Completed foundational learning modules on AWS cloud services and concepts.
