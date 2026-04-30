@@ -19,7 +19,8 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects & Achievements</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
                 <li><a href="#contact" class="btn btn-primary">Contact Me</a></li>
             </ul>
         </div>
@@ -121,12 +122,36 @@
     <section id="projects" class="section">
         <div class="container">
             <div class="section-header">
-                <h2>Projects & Achievements</h2>
+                <h2>Projects</h2>
                 <div class="divider"></div>
             </div>
-            <div class="projects-grid" style="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));">
+            <div class="projects-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
                 <div class="card project-card">
                     <div class="project-image" style="background: linear-gradient(135deg, var(--secondary-color), var(--primary-color)); height: 150px;"></div>
+                    <div class="project-info">
+                        <h3>CertiVault</h3>
+                        <p>A comprehensive SaaS platform for certificate management and verification, built with a robust React UI and secure Java/Spring Boot backend.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Java Spring Boot</span>
+                            <span>SaaS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, var(--accent-color), var(--secondary-color)); height: 150px;"></div>
+                    <div class="project-info">
+                        <h3>RAG Application</h3>
+                        <p>An advanced Retrieval-Augmented Generation (RAG) system utilizing Large Language Models to retrieve context-aware and highly accurate responses.</p>
+                        <div class="project-tags">
+                            <span>AI/ML</span>
+                            <span>LLMs</span>
+                            <span>Vector DB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, var(--primary-color), var(--accent-color)); height: 150px;"></div>
                     <div class="project-info">
                         <h3>L&T Techgium | Building Automation</h3>
                         <p>Designed an AI-powered building automation system to improve energy efficiency and reduce carbon emissions by 50%.</p>
@@ -137,15 +162,25 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="section bg-white">
+        <div class="container">
+            <div class="section-header">
+                <h2>Achievements & Hackathons</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="projects-grid" style="grid-template-columns: 1fr; max-width: 800px; margin: 0 auto;">
                 <div class="card project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, var(--accent-color), var(--secondary-color)); height: 150px;"></div>
-                    <div class="project-info">
-                        <h3>National Level Semi-Finalist</h3>
-                        <p>Achieved semi-finalist status at the national level L&T Techgium innovation challenge, demonstrating strong problem-solving and innovation capabilities.</p>
-                        <div class="project-tags">
-                            <span>Achievement</span>
+                    <div class="project-info" style="text-align: center; padding: 3rem 2rem;">
+                        <h3 style="font-size: 1.5rem; color: var(--primary-color); margin-bottom: 1rem;">🏆 National Level Semi-Finalist</h3>
+                        <p style="font-size: 1.1rem;">Achieved semi-finalist status at the national level L&T Techgium innovation challenge, demonstrating strong problem-solving and innovation capabilities.</p>
+                        <div class="project-tags" style="justify-content: center; margin-top: 1.5rem;">
                             <span>Innovation</span>
                             <span>L&T Techgium</span>
+                            <span>Hackathon</span>
                         </div>
                     </div>
                 </div>
@@ -153,7 +188,7 @@
         </div>
     </section>
 
-    <section id="contact" class="section bg-white">
+    <section id="contact" class="section">
         <div class="container">
             <div class="contact-box card">
                 <div class="section-header">
