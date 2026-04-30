@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salman Khan | Professional Portfolio</title>
+    <meta name="description" content="Professional portfolio of Salman Khan, showcasing projects, skills, and experience.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">SK.</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="btn btn-primary">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="greeting">Hello, I'm</span>
+                <h1>Salman Khan</h1>
+                <p class="subtitle">Software Engineer & Developer</p>
+                <p class="description">Building clean, scalable, and user-centric applications. Passionate about solving complex problems with elegant solutions.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="https://github.com/SALMANKHAN3107" target="_blank" class="btn btn-outline">GitHub Profile</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- A soft, abstract shape that fits the blue aesthetic -->
+                <div class="image-placeholder">
+                    <div class="blob"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section bg-white">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a dedicated developer with a strong foundation in modern web technologies. My goal is to build applications that are not only highly functional but also provide a peaceful and seamless user experience.</p>
+                    <p>When I'm not coding, I am exploring new technologies, refining my design skills, and continuously learning to stay at the forefront of the tech industry.</p>
+                </div>
+                <div class="stats-cards">
+                    <div class="card stat-card">
+                        <h3>2+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="card stat-card">
+                        <h3>10+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Skills</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="card skill-card">
+                    <h3>Frontend</h3>
+                    <ul class="skill-list">
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>React & Vite</li>
+                        <li>Tailwind CSS</li>
+                    </ul>
+                </div>
+                <div class="card skill-card">
+                    <h3>Backend</h3>
+                    <ul class="skill-list">
+                        <li>Node.js & Express</li>
+                        <li>Java & Spring Boot</li>
+                        <li>RESTful APIs</li>
+                    </ul>
+                </div>
+                <div class="card skill-card">
+                    <h3>Database & Tools</h3>
+                    <ul class="skill-list">
+                        <li>SQL & MongoDB</li>
+                        <li>Git & GitHub</li>
+                        <li>Postman</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section bg-white">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="card project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));"></div>
+                    <div class="project-info">
+                        <h3>CertiVault</h3>
+                        <p>A SaaS platform for certificate management and verification. Built with robust backend architecture and an intuitive user interface.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Java</span>
+                            <span>Spring</span>
+                        </div>
+                        <a href="#" class="project-link">View Details &rarr;</a>
+                    </div>
+                </div>
+                <div class="card project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));"></div>
+                    <div class="project-info">
+                        <h3>Task Management App</h3>
+                        <p>A highly interactive application for tracking tasks and improving productivity with drag-and-drop functionality.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>CSS3</span>
+                        </div>
+                        <a href="#" class="project-link">View Details &rarr;</a>
+                    </div>
+                </div>
+                <div class="card project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, var(--primary-color), var(--accent-color));"></div>
+                    <div class="project-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A fully responsive online store featuring product search, filtering, and a secure checkout process.</p>
+                        <div class="project-tags">
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <a href="#" class="project-link">View Details &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="contact-box card">
+                <div class="section-header">
+                    <h2>Get In Touch</h2>
+                    <p class="contact-subtitle">I'm currently open to new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                </div>
+                <a href="mailto:khanpc3107@gmail.com" class="btn btn-primary btn-large">Say Hello</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2026 Salman Khan. Built with clean code and thoughtful design.</p>
+            <div class="social-links">
+                <a href="https://github.com/SALMANKHAN3107" target="_blank">GitHub</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
